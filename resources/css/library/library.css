@@ -1,0 +1,279 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+.lib_container {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: fit-content(50%);
+    grid-auto-flow: row;
+    grid-template-areas:
+        "library-header library-header library-header library-header"
+        "title1 title1 title1 title1"
+        "img img story story"
+        "title2 title2 title2 title2"
+        "movie movie movie movie"
+        "title3 title3 title3 title3"
+        "audio audio audio audio";
+
+    grid-gap: 4px;
+
+}
+
+/*
+---------
+header
+---------
+*/
+
+
+.library-header {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    grid-area: library-header;
+    background-size: cover;
+    margin: 0;
+    top: 0;
+    color: #A0BC38;
+    text-shadow: 2px 2px 8px blanchedalmond;
+}
+
+.title-h {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.title-h p {
+    color: black;
+    font-size: 2rem;
+    font-weight: normal;
+    margin-top: 20px;
+
+}
+
+.title-h p a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+    transition: .4s;
+
+}
+
+.title-h p a:hover {
+    color: #5CC1DA;
+    font-weight: 600;
+    font-size: 2.5rem;
+
+}
+
+.box {
+
+    box-shadow: 2px 2px 4px rgb(161, 161, 161);
+    border-radius: 10px;
+    margin: 30px 60px 10px 60px;
+
+}
+
+/*
+---------
+title1
+---------
+*/
+.title {
+    display: flex;
+    justify-content: center;
+    text-transform: capitalize;
+    font-size: 2em;
+    font-weight: 600;
+    padding: 1%;
+    background: hsla(79, 47%, 62%, 1);
+
+}
+
+.title:hover {
+    border: 3px solid rgb(84, 198, 226);
+
+    /* box-shadow: inset -3px -5px 7px rgb(97, 96, 96); */
+}
+
+.title1 {
+    grid-area: title1;
+}
+
+.title2 {
+    grid-area: title2;
+}
+
+.title3 {
+    grid-area: title3;
+}
+
+/*
+---------
+img
+---------
+*/
+.img-left {
+    grid-area: img;
+    background: url(assets/images/library_page/couple.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 80%;
+    margin: auto;
+    height: 100vh;
+
+}
+
+/*
+---------
+stories
+---------
+*/
+.story {
+    grid-area: story;
+    display: flex;
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+
+}
+
+.s1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.img-s {
+    margin: 20%;
+    border: 7.5px solid green;
+    border-radius: 50%;
+    height: 150px;
+    transition: .4s;
+}
+
+.img-s:hover {
+    transform: scale(1.2);
+    box-shadow: 0px 0px 16px rgb(21, 215, 8);
+    border: 6px solid rgb(21, 215, 8);
+
+}
+
+.p-s {
+    margin: 25px 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* margin-left: 15%; */
+    /* margin-right: 15%; */
+    font-size: 1.5rem;
+    width: 90%;
+    text-align: left;
+
+}
+
+.p-s-span {
+    font-weight: bold;
+    font-size: 2rem;
+    text-transform: capitalize;
+
+}
+
+.movie {
+    grid-area: movie;
+}
+
+
+.audio {
+    grid-area: audio;
+}
+
+/* 
+ITEM CARD
+ */
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.card {
+    margin: 10px;
+    border: 2px solid hsla(79, 51%, 49%, 1);
+    flex-basis: 300px;
+    height: 400px;
+    background-color: white;
+    position: relative;
+}
+
+.section-subtitle-card {
+    position: relative;
+    text-align: center;
+    border: none;
+    width: 100%;
+    font-weight: 500;
+
+
+}
+
+.section-subtitle-card p {
+
+    font-size: 2rem;
+    font-weight: 500;
+    display: block;
+}
+
+.card-img {
+    padding: 10px;
+    border-radius: 2rem;
+    position: relative;
+}
+
+.card-title {
+    text-align: center;
+    margin: auto;
+    margin-top: 5px;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.card-btn {
+    margin-left: 30%;
+    padding: 4px 8px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    height: 50px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    font-size: large;
+    box-shadow: none;
+    background-color: hsla(79, 51%, 49%, 1);
+    transition: .4s;
+}
+
+.card-btn:hover {
+    transform: scale(1.09);
+    background-color: #1FBCE3;
+    border: 2px solid black;
+    cursor: pointer;
+    text-align: center;
+}

@@ -1,0 +1,140 @@
+.title {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-repeat: no-repeat;
+
+
+}
+
+.img-s2 {
+  border: 15px solid green;
+  border-radius: 50%;
+  height: 200px;
+  margin-top: 50px;
+  transition: .4s;
+  cursor: pointer;
+  position: absolute;
+}
+
+
+.img-s2:hover {
+  transform: scale(1.2);
+  box-shadow: 2px 2px 8px rgb(24, 41, 23), -2px -2px 8px rgb(24, 41, 23);
+  border: 4px solid green;
+}
+
+.title p {
+  font-size: 3rem;
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 340px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+  border: 8px solid green;
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 1.5rem;
+  box-shadow: 0px 0px 22px;
+}
+
+/*============
+    slider
+ ==============*/
+
+.wrap {
+  padding-bottom: 50px;
+  overflow-x: hidden;
+  padding-top: 50px;
+  background: white;
+  background-repeat: no-repeat;
+  position: relative;
+
+}
+
+
+.slide1 .slide-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+.slide2 .slide-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+
+}
+
+.sl {
+  margin: 10px;
+  border: 2px solid black;
+  flex-basis: 300px;
+  height: 350px;
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  transition: .4s;
+}
+
+.sl:hover {
+  transform: scale(0.93);
+  box-shadow: 3px 3px 10px black, -3px -3px 10px black;
+}
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  top: 40%;
+  transition: .4s;
+}
+
+.arrow:hover {
+  transform: scale(0.8);
+
+}
+
+#arrow-left {
+  border-width: 30px 40px 30px 0;
+  border-color: transparent green transparent transparent;
+  left: 0;
+  margin-left: 30px;
+}
+
+#arrow-left:hover {
+  border-color: transparent rgb(14, 196, 14) transparent transparent;
+}
+
+#arrow-right {
+  border-width: 30px 0 30px 40px;
+  border-color: transparent transparent transparent green;
+  right: 0;
+  margin-right: 10px;
+
+}
+
+#arrow-right:hover {
+  border-color: transparent transparent transparent rgb(14, 196, 14);
+
+}
+
+.storys-img {
+  height: 100%;
+  width: 100%;
+  border-radius: 30px;
+
+
+
+}
